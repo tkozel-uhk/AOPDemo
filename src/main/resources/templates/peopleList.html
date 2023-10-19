@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>List of People</title>
+    <style>
+        td {
+            border: 2px solid lightgray;
+        }
+    </style>
 </head>
 <body>
     <table>
@@ -10,7 +15,9 @@
             <td th:text="${p.id}"/>
             <td th:text="${p.firstname}"/>
             <td th:text="${p.surname}"/>
+            <td><a th:href="@{/edit/{id}(id=${p.id})}">Edit</a></td>
         </tr>
     </table>
+    <a href="/edit">Add new person</a>
 </body>
 </html>

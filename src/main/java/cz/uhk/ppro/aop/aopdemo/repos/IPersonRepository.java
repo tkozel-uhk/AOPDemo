@@ -4,6 +4,9 @@ import cz.uhk.ppro.aop.aopdemo.model.Person;
 
 import java.util.List;
 
+/**
+ * Repositář osob - rozhraní
+ */
 public interface IPersonRepository {
     //save person to repository
     void save(Person person);

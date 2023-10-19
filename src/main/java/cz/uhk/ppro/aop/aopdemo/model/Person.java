@@ -1,7 +1,7 @@
 package cz.uhk.ppro.aop.aopdemo.model;
 
 /**
- * Simple POJO class representing person with given firstname and surname
+ * Jednoduché POJO Osoby
  */
 public class Person {
     long id;
